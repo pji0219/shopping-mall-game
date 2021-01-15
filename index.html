@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>shopping mall game</title>
+
+    <meta name="author" content="park" />
+    <meta name="description" content="shopping mall game" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA Compatible" content="ie=edge" />
+
+    <!-- CSS reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+      integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="./src/main.js" defer></script>
+  </head>
+  <body>
+    <!-- LOGO -->
+    <section>
+      <img src="imgs/logo.png" alt="logo" class="logo" />
+    </section>
+
+    <!-- BUTTONS -->
+    <section class="btns">
+      <button class="btn">
+        <img
+          src="imgs/blue_t.png"
+          alt="blue_t"
+          class="imgBtn"
+          data-key="type"
+          data-value="tshirt"
+        />
+      </button>
+      <button class="btn">
+        <img
+          src="imgs/blue_p.png"
+          alt="blue_p"
+          class="imgBtn"
+          data-key="type"
+          data-value="pants"
+        />
+      </button>
+      <button class="btn">
+        <img
+          src="imgs/blue_s.png"
+          alt="blue_s"
+          class="imgBtn"
+          data-key="type"
+          data-value="skirt"
+        />
+        <!-- 이벤트 데이터에 키와 밸류 지정됨 -->
+      </button>
+      <button class="btn colorBtn blue" data-key="color" data-value="blue">
+        Blue
+      </button>
+      <button class="btn colorBtn yellow" data-key="color" data-value="yellow">
+        Yellow
+      </button>
+      <button class="btn colorBtn pink" data-key="color" data-value="pink">
+        Pink
+      </button>
+    </section>
+
+    <!-- ITEMS -->
+    <ul class="items"></ul>
+  </body>
+</html>
